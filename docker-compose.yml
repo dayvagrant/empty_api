@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  mongodb:
+    image : mongodb
+    container_name: mongodb
+    volumes:
+      - /data/DB/mongodata:/data/db
+    ports:
+      - 27017:27017
+    restart: unless-stopped
+    networks:
+      - net
+
+
+  api_service:
+    hostname: api.Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - mongodb
+    volumes:
+      - /data/ENV/avitoparser:/avitoparser
+    ports:
+      - "2205:2205"
+    networks:
+      - net
+
+networks:
+  net:
