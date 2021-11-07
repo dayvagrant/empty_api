@@ -2,4 +2,4 @@
 
 
 def example_func():
-    return True
+    """Example Func for nothing"""

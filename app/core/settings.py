@@ -14,7 +14,6 @@ class DbConfig(BaseSettings):
     """
     Table Name Settings.
     """
-
     mongodb_database: str
     mongodb_host: str
     mongodb_port: str

@@ -1,5 +1,5 @@
 """
-ASR Service application initialization.
+API Service application initialization.
 See all endpoints in 'routes' folder.
 """
 from fastapi import FastAPI
