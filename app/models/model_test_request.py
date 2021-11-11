@@ -4,6 +4,6 @@ Model for endpoint.
 from pydantic import BaseModel
 
 
-class HealthcheckResult(BaseModel):
+class TestRequest(BaseModel):
+    text: str
     is_alive: bool
-

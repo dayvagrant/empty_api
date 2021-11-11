@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "empty project"
+name = "empty"
 version = "0.1.0"
 description = "Example text"
 authors = ["dayvagrant"]

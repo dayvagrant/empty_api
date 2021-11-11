@@ -5,7 +5,7 @@ from fastapi import APIRouter
 ROUTER = APIRouter()
 
 
-@ROUTER.get("/healthcheck", response_model=HealthcheckResult, name="healthcheck")
+@ROUTER.get("/", )
 def get_health_check() -> HealthcheckResult:
     """
     Healthcheck endpoint.
